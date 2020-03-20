@@ -7,5 +7,3 @@ RUN wget http://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.2/cmd
     && mv jmeter-plugins-manager-1.3.jar lib/ext/
 # install plugin manager
 RUN java -cp lib/ext/jmeter-plugins-manager-1.3.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
-# install all plugins
-RUN bin/PluginsManagerCMD.sh install-all-except
